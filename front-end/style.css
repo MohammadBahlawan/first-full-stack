@@ -1,0 +1,58 @@
+.back {
+    background-color: #26C5DE;
+}
+.panel-primary {
+    border: 2px solid #337ab7;
+    margin-top: 150px;
+}
+textarea {
+    overflow-wrap: break-word;
+}
+.panel2 {
+        overflow-wrap: break-word;
+}
+.note{
+    color: black;
+}
+.row1 {
+ color: forestgreen;
+    
+}
+body {
+    background-image: url("components/vote-list/escheresque_ste/escheresque_ste/escheresque_ste.png") !important;
+}
+img {
+ margin-left: 32%;
+    width: 35%;
+    height: 170px;
+}
+.btn {
+  background: #808385;
+  background-image: -webkit-linear-gradient(top, #808385, #151c21);
+  background-image: -moz-linear-gradient(top, #808385, #151c21);
+  background-image: -ms-linear-gradient(top, #808385, #151c21);
+  background-image: -o-linear-gradient(top, #808385, #151c21);
+  background-image: linear-gradient(to bottom, #808385, #151c21);
+  -webkit-border-radius: 46;
+  -moz-border-radius: 46;
+  border-radius: 46px;
+  font-family: Georgia;
+  color: #11cff0;
+  font-size: 17px;
+  padding: 9px 22px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #00e1ff;
+  background-image: -webkit-linear-gradient(top, #00e1ff, #354545);
+  background-image: -moz-linear-gradient(top, #00e1ff, #354545);
+  background-image: -ms-linear-gradient(top, #00e1ff, #354545);
+  background-image: -o-linear-gradient(top, #00e1ff, #354545);
+  background-image: linear-gradient(to bottom, #00e1ff, #354545);
+  text-decoration: none;
+}
+
+.sbtn {
+    color: darkgreen;
+}

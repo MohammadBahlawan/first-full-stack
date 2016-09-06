@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="VoteApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vote</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+
+
+<body>
+
+    <div id="menu" class="container">
+        <ul>
+            <li class="current_page_item"><a href="#/" accesskey="1" title="">Homepage</a></li>
+            <li><a href="#/find" accesskey="3" title="">Find a Job</a></li>
+            <li><a href="#/post" accesskey="4" title="">Post a Job</a></li>
+            <li><a href="#/about" accesskey="5" title="">About Us</a></li>
+        </ul>
+    </div>
+    <!--
+    <div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-primary ">
+      <div class="panel-heading"><input class="note" placeholder="Title"></input></div>
+      <div class="panel-body"><textarea placeholder="Description"></textarea></div>
+      <button ng-click="addVotes()">Submit</button>
+      </div>
+    </div>
+-->
+
+    <div ng-repeat="vote in voteArray">{{voteArray}}
+
+    </div>
+
+
+
+
+    <div ng-view></div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="components/vote-list/voteService.js"></script>
+    <script src="components/vote-list/voteList.js"></script>
+
+
+
+    <!--     <script src="components/todo-list/todoList.js"></script>
+    <script src="components/todo-list/todoService.js"></script> -->
+</body>
+
+</html>

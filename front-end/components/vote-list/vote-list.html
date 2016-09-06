@@ -1,0 +1,36 @@
+<div> <img src="images/hire.png"> </div>
+<div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-primary ">
+                <div class="panel-heading back">
+                    Job Categorie:<input ng-model="newVote.title" class="note" placeholder="Title"> </div>
+                <div class="panel-body">
+                    Description:<textarea placeholder="Description" ng-model="newVote.description"></textarea>
+                </div>
+                <div>Email:<input ng-model="newVote.email" class="note" placeholder="Email"></div>
+                <div>Phone Number:<input ng-model="newVote.phoneNumber" class="note" placeholder="Phone Number"></div>
+                <br><button ng-click="addVote(newVote)" class="glyphicon glyphicon-modal-window btn">Post</button>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div ng-repeat="vote in voteArray track by $index">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-primary ">
+                            <div class="panel-heading">
+                                <h1>{{vote.title}}</h1> </div>
+                            <div class="panel-body panel2">
+                                Description:<h1>{{vote.description}}</h1>
+                               <div>Email:<h1>{{vote.email}}</h1></div>
+                               <div>Phone:<h1>{{vote.phoneNumber}}</h1></div>
+                                <button ng-click="deleteVote(vote, $index)" class="btn">Delete</button>
+                                <button ng-click="updateVote(vote, $index)" ng-show="vote.editing">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
